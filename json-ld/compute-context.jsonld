@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "@vocab": "https://cloud.google.com/compute/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "gcp": "https://cloud.google.com/schema#",
+    "Instance": "gcp:ComputeInstance",
+    "Disk": "gcp:ComputeDisk",
+    "Network": "gcp:ComputeNetwork",
+    "Firewall": "gcp:ComputeFirewall",
+    "name": "schema:name",
+    "description": "schema:description",
+    "id": "schema:identifier",
+    "status": "gcp:status",
+    "zone": "gcp:zone",
+    "machineType": "gcp:machineType",
+    "selfLink": "schema:url",
+    "creationTimestamp": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    },
+    "sizeGb": {
+      "@id": "gcp:sizeGb",
+      "@type": "xsd:string"
+    },
+    "priority": {
+      "@id": "gcp:priority",
+      "@type": "xsd:integer"
+    }
+  }
+}

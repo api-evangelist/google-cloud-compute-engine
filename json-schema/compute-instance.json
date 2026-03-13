@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-search/google-cloud-compute-engine/refs/heads/main/json-schema/compute-instance.json",
+  "title": "Google Compute Engine Instance",
+  "description": "Represents a Compute Engine virtual machine instance resource, including its machine type, disks, network interfaces, and status.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique identifier for the resource."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the resource."
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional description of the resource."
+    },
+    "zone": {
+      "type": "string",
+      "description": "URL of the zone where the instance resides."
+    },
+    "machineType": {
+      "type": "string",
+      "description": "Full or partial URL of the machine type resource to use for this instance."
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the instance.",
+      "enum": [
+        "PROVISIONING",
+        "STAGING",
+        "RUNNING",
+        "STOPPING",
+        "STOPPED",
+        "SUSPENDING",
+        "SUSPENDED",
+        "TERMINATED"
+      ]
+    },
+    "networkInterfaces": {
+      "type": "array",
+      "description": "An array of network configurations for this instance.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "network": {
+            "type": "string"
+          },
+          "subnetwork": {
+            "type": "string"
+          },
+          "networkIP": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "disks": {
+      "type": "array",
+      "description": "Array of disks associated with this instance.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "boot": {
+            "type": "boolean"
+          },
+          "autoDelete": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "selfLink": {
+      "type": "string",
+      "description": "Server-defined URL for this resource."
+    },
+    "creationTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp in RFC3339 text format."
+    }
+  },
+  "required": ["name", "machineType"]
+}
