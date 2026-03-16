@@ -1,3 +1,4 @@
+aid: google-cloud-compute-engine
 name: Google Cloud Compute Engine
 description: >-
   Google Cloud Compute Engine delivers virtual machines running in Google's
@@ -9,8 +10,9 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: >-
   https://raw.githubusercontent.com/api-search/google-cloud-compute-engine/refs/heads/main/apis.yml
 created: '2026-03-13'
-modified: '2026-03-13'
-specificationVersion: '0.18'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+type: Index
 tags:
   - Google Cloud
   - Virtual Machines
@@ -33,15 +35,35 @@ apis:
       - Firewalls
       - Virtual Machines
     properties:
+      - type: Documentation
+        url: https://cloud.google.com/compute/docs/reference/rest/v1
       - type: OpenAPI
         url: openapi/compute-openapi.yml
+      - type: Authentication
+        url: https://cloud.google.com/compute/docs/authentication
+      - type: Getting Started
+        url: https://cloud.google.com/compute/docs/quickstart-linux
       - type: JSONSchema
         url: json-schema/compute-instance.json
 common:
-  - type: GettingStarted
-    url: https://cloud.google.com/compute/docs/quickstart
+  - type: Portal
+    url: https://cloud.google.com/compute
+  - type: Getting Started
+    url: https://cloud.google.com/compute/docs/quickstart-linux
+  - type: Documentation
+    url: https://cloud.google.com/compute/docs
+  - type: Authentication
+    url: https://cloud.google.com/compute/docs/authentication
   - type: Pricing
     url: https://cloud.google.com/compute/pricing
+  - type: Terms of Service
+    url: https://cloud.google.com/terms
+  - type: Privacy Policy
+    url: https://policies.google.com/privacy
+  - type: Status
+    url: https://status.cloud.google.com/
+  - type: Support
+    url: https://cloud.google.com/compute/docs/support
   - type: JSON-LD
     url: json-ld/compute-context.jsonld
 maintainers:
