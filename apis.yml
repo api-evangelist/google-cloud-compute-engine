@@ -14,11 +14,11 @@ modified: '2026-03-16'
 specificationVersion: '0.19'
 type: Index
 tags:
-  - Google Cloud
-  - Virtual Machines
-  - IaaS
   - Compute
+  - Google Cloud
+  - IaaS
   - Infrastructure
+  - Virtual Machines
 apis:
   - name: Google Compute Engine API
     description: >-
@@ -29,10 +29,10 @@ apis:
     humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
     baseURL: https://compute.googleapis.com
     tags:
-      - Instances
       - Disks
-      - Networks
       - Firewalls
+      - Instances
+      - Networks
       - Virtual Machines
     properties:
       - type: Documentation

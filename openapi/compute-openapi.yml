@@ -15,14 +15,14 @@ servers:
   - url: https://compute.googleapis.com/compute/v1
     description: Google Compute Engine API v1
 tags:
-  - name: Instances
-    description: Manage virtual machine instances
   - name: Disks
     description: Manage persistent disks
-  - name: Networks
-    description: Manage VPC networks
   - name: Firewalls
     description: Manage firewall rules
+  - name: Instances
+    description: Manage virtual machine instances
+  - name: Networks
+    description: Manage VPC networks
 paths:
   /projects/{project}/zones/{zone}/instances:
     get:
