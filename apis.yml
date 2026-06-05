@@ -1,7 +1,8 @@
 aid: google-cloud-compute-engine
 name: Google Cloud Compute Engine
-description: Google Cloud Compute Engine delivers virtual machines running in Google's innovative data centers and worldwide
-  fiber network. Compute Engine VMs boot quickly, come with persistent disk storage, and deliver consistent performance. It
+description: >-
+  Google Cloud Compute Engine delivers virtual machines running in Google's innovative data centers and worldwide fiber
+  network. Compute Engine VMs boot quickly, come with persistent disk storage, and deliver consistent performance. It
   offers predefined and custom machine types, preemptible VMs, and sole-tenant nodes for specialized workloads.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-search/google-cloud-compute-engine/refs/heads/main/apis.yml
@@ -17,36 +18,29 @@ tags:
   - Virtual Machines
 apis:
   - name: Google Compute Engine API
-    description: The Compute Engine API allows you to create and manage virtual machine instances, instance groups, disks, networks,
-      firewalls, and other compute resources programmatically within Google Cloud.
+    description: >-
+      The Compute Engine API allows you to create and manage virtual machine instances, instance groups, disks,
+      networks, firewalls, and other compute resources programmatically within Google Cloud.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
     baseURL: https://compute.googleapis.com
     tags:
-    - Disks
-    - Firewalls
-    - Instances
-    - Networks
-    - Virtual Machines
+      - Disks
+      - Firewalls
+      - Instances
+      - Networks
+      - Virtual Machines
     properties:
-    - type: Documentation
-      url: https://cloud.google.com/compute/docs/reference/rest/v1
-    - type: OpenAPI
-      url: openapi/compute-openapi.yml
-    - type: Authentication
-      url: https://cloud.google.com/compute/docs/authentication
-    - type: GettingStarted
-      url: https://cloud.google.com/compute/docs/quickstart-linux
-    - type: JSONSchema
-      url: json-schema/compute-instance.json
-    - type: NaftikoCapability
-      url: capabilities/compute-disks.yaml
-    - type: NaftikoCapability
-      url: capabilities/compute-firewalls.yaml
-    - type: NaftikoCapability
-      url: capabilities/compute-instances.yaml
-    - type: NaftikoCapability
-      url: capabilities/compute-networks.yaml
+      - type: Documentation
+        url: https://cloud.google.com/compute/docs/reference/rest/v1
+      - type: OpenAPI
+        url: openapi/compute-openapi.yml
+      - type: Authentication
+        url: https://cloud.google.com/compute/docs/authentication
+      - type: GettingStarted
+        url: https://cloud.google.com/compute/docs/quickstart-linux
+      - type: JSONSchema
+        url: json-schema/compute-instance.json
 common:
   - type: GitHubOrganization
     url: https://github.com/GoogleCloudPlatform
