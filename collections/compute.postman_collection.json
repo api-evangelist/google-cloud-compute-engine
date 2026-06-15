@@ -1,0 +1,939 @@
+{
+  "item": [
+    {
+      "id": "4e80e003-38fd-40de-b9f5-174424d08afd",
+      "name": "Disks",
+      "description": {
+        "content": "Manage persistent disks",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "071efe90-3c65-422d-b384-dc6f617fe7b4",
+          "name": "Google Cloud Compute Engine List Disks",
+          "request": {
+            "name": "Google Cloud Compute Engine List Disks",
+            "description": {
+              "content": "Retrieves a list of persistent disks contained within the specified zone.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "zones",
+                ":zone",
+                "disks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "zone",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "14c261be-c7de-4ee6-8103-da5e422e1776",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "zones",
+                    ":zone",
+                    "disks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "zone",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"sizeGb\": \"string\",\n      \"type\": \"string\",\n      \"status\": \"string\",\n      \"zone\": \"string\",\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"1984-05-31T12:26:46.417Z\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"sizeGb\": \"string\",\n      \"type\": \"string\",\n      \"status\": \"string\",\n      \"zone\": \"string\",\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"1988-01-10T09:02:05.771Z\"\n    }\n  ],\n  \"nextPageToken\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "9556c0f5-af59-4b0a-974a-e457180e141f",
+      "name": "Firewalls",
+      "description": {
+        "content": "Manage firewall rules",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "729d82e9-8c61-447e-a005-5da98fa7c8a8",
+          "name": "Google Cloud Compute Engine List Firewalls",
+          "request": {
+            "name": "Google Cloud Compute Engine List Firewalls",
+            "description": {
+              "content": "Retrieves the list of firewall rules available to the specified project.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "global",
+                "firewalls"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "13d55c0f-169b-447c-b330-e6560a02d318",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "global",
+                    "firewalls"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"network\": \"string\",\n      \"direction\": \"INGRESS\",\n      \"priority\": 8293,\n      \"allowed\": [\n        {\n          \"IPProtocol\": \"string\",\n          \"ports\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"IPProtocol\": \"string\",\n          \"ports\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"sourceRanges\": [\n        \"string\",\n        \"string\"\n      ],\n      \"selfLink\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"network\": \"string\",\n      \"direction\": \"INGRESS\",\n      \"priority\": 7152,\n      \"allowed\": [\n        {\n          \"IPProtocol\": \"string\",\n          \"ports\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"IPProtocol\": \"string\",\n          \"ports\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"sourceRanges\": [\n        \"string\",\n        \"string\"\n      ],\n      \"selfLink\": \"string\"\n    }\n  ],\n  \"nextPageToken\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "bcef3a4d-ded8-4c4c-a41b-31470b788dc0",
+      "name": "Instances",
+      "description": {
+        "content": "Manage virtual machine instances",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7a5a2eb1-4ebd-46e8-866b-93152feb2061",
+          "name": "Google Cloud Compute Engine List Instances",
+          "request": {
+            "name": "Google Cloud Compute Engine List Instances",
+            "description": {
+              "content": "Retrieves the list of instances contained within the specified zone.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "zones",
+                ":zone",
+                "instances"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "maxResults",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageToken",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "zone",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "df739d26-0f73-4c6e-b34f-4e3a11136774",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "zones",
+                    ":zone",
+                    "instances"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "maxResults",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pageToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "zone",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"zone\": \"string\",\n      \"machineType\": \"string\",\n      \"status\": \"SUSPENDED\",\n      \"networkInterfaces\": [\n        {\n          \"network\": \"string\",\n          \"subnetwork\": \"string\",\n          \"networkIP\": \"string\"\n        },\n        {\n          \"network\": \"string\",\n          \"subnetwork\": \"string\",\n          \"networkIP\": \"string\"\n        }\n      ],\n      \"disks\": [\n        {\n          \"source\": \"string\",\n          \"boot\": true,\n          \"autoDelete\": false\n        },\n        {\n          \"source\": \"string\",\n          \"boot\": false,\n          \"autoDelete\": false\n        }\n      ],\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"2005-06-16T08:43:47.341Z\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"zone\": \"string\",\n      \"machineType\": \"string\",\n      \"status\": \"STOPPING\",\n      \"networkInterfaces\": [\n        {\n          \"network\": \"string\",\n          \"subnetwork\": \"string\",\n          \"networkIP\": \"string\"\n        },\n        {\n          \"network\": \"string\",\n          \"subnetwork\": \"string\",\n          \"networkIP\": \"string\"\n        }\n      ],\n      \"disks\": [\n        {\n          \"source\": \"string\",\n          \"boot\": true,\n          \"autoDelete\": true\n        },\n        {\n          \"source\": \"string\",\n          \"boot\": false,\n          \"autoDelete\": false\n        }\n      ],\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"1984-10-16T14:35:35.327Z\"\n    }\n  ],\n  \"nextPageToken\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "930423b7-dc7c-4078-a632-bc03484b7c99",
+          "name": "Google Cloud Compute Engine Create Instance",
+          "request": {
+            "name": "Google Cloud Compute Engine Create Instance",
+            "description": {
+              "content": "Creates an instance resource in the specified project using the data included in the request.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "zones",
+                ":zone",
+                "instances"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "zone",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"zone\": \"<string>\",\n  \"machineType\": \"<string>\",\n  \"status\": \"<string>\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    },\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    },\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    }\n  ],\n  \"selfLink\": \"<string>\",\n  \"creationTimestamp\": \"<dateTime>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "f51d6c64-8560-4558-8ca5-6c60c4749ba8",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "zones",
+                    ":zone",
+                    "instances"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "zone",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"zone\": \"<string>\",\n  \"machineType\": \"<string>\",\n  \"status\": \"<string>\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    },\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    },\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    }\n  ],\n  \"selfLink\": \"<string>\",\n  \"creationTimestamp\": \"<dateTime>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"operationType\": \"string\",\n  \"status\": \"string\",\n  \"targetLink\": \"string\",\n  \"progress\": 3060,\n  \"insertTime\": \"1968-04-18T17:41:02.201Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "35c3c50e-ad1b-47df-97d7-f0572a629155",
+          "name": "Google Cloud Compute Engine Get Instance",
+          "request": {
+            "name": "Google Cloud Compute Engine Get Instance",
+            "description": {
+              "content": "Returns the specified Instance resource.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "zones",
+                ":zone",
+                "instances",
+                ":instance"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "zone",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "instance",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5a37f97f-174c-4c1d-b8eb-f922797e858f",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "zones",
+                    ":zone",
+                    "instances",
+                    ":instance"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "zone",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "instance",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"zone\": \"string\",\n  \"machineType\": \"string\",\n  \"status\": \"STAGING\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"string\",\n      \"subnetwork\": \"string\",\n      \"networkIP\": \"string\"\n    },\n    {\n      \"network\": \"string\",\n      \"subnetwork\": \"string\",\n      \"networkIP\": \"string\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"string\",\n      \"boot\": false,\n      \"autoDelete\": false\n    },\n    {\n      \"source\": \"string\",\n      \"boot\": false,\n      \"autoDelete\": false\n    }\n  ],\n  \"selfLink\": \"string\",\n  \"creationTimestamp\": \"2010-11-05T08:08:03.212Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "94d6495e-3d08-45b3-8e96-0297ffefdac6",
+          "name": "Google Cloud Compute Engine Delete Instance",
+          "request": {
+            "name": "Google Cloud Compute Engine Delete Instance",
+            "description": {
+              "content": "Deletes the specified Instance resource.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "zones",
+                ":zone",
+                "instances",
+                ":instance"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "zone",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "instance",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6fe83062-7739-41a7-9e9c-9684ef1ece77",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "zones",
+                    ":zone",
+                    "instances",
+                    ":instance"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "zone",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "instance",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"operationType\": \"string\",\n  \"status\": \"string\",\n  \"targetLink\": \"string\",\n  \"progress\": 3060,\n  \"insertTime\": \"1968-04-18T17:41:02.201Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "6d0d4f51-a9ef-48d9-961a-6f036fa6ac96",
+      "name": "Networks",
+      "description": {
+        "content": "Manage VPC networks",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "da7e9181-4263-44f1-9573-876b2e5a8221",
+          "name": "Google Cloud Compute Engine List Networks",
+          "request": {
+            "name": "Google Cloud Compute Engine List Networks",
+            "description": {
+              "content": "Retrieves the list of networks available to the specified project.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects",
+                ":project",
+                "global",
+                "networks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "project",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bee28a01-0d5d-4364-bad4-ccd74c258d8c",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects",
+                    ":project",
+                    "global",
+                    "networks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "project",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"autoCreateSubnetworks\": true,\n      \"IPv4Range\": \"string\",\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"2024-04-09T05:50:49.127Z\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"autoCreateSubnetworks\": true,\n      \"IPv4Range\": \"string\",\n      \"selfLink\": \"string\",\n      \"creationTimestamp\": \"1973-10-28T10:16:15.354Z\"\n    }\n  ],\n  \"nextPageToken\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://compute.googleapis.com/compute/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "41c05a74-f89e-4f42-94bc-a10cd4b41736",
+    "name": "Google Cloud Compute Engine Google Compute Engine API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.\n\nContact Support:\n Name: Google Cloud",
+      "type": "text/plain"
+    }
+  }
+}
