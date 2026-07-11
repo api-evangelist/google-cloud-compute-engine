@@ -42,6 +42,12 @@ apis:
       - type: JSONSchema
         url: json-schema/compute-instance.json
 common:
+  - type: VulnerabilityDisclosure
+    url: security/google-cloud-compute-engine-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/google-cloud-compute-engine-domain-security.yml
+  - type: Authentication
+    url: authentication/google-cloud-compute-engine-authentication.yml
   - type: OAuthScopes
     url: scopes/google-cloud-compute-engine-scopes.yml
   - type: GitHubOrganization
