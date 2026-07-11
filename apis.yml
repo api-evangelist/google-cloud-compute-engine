@@ -42,6 +42,8 @@ apis:
       - type: JSONSchema
         url: json-schema/compute-instance.json
 common:
+  - type: OAuthScopes
+    url: scopes/google-cloud-compute-engine-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/GoogleCloudPlatform
   - type: Portal
