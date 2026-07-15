@@ -42,6 +42,8 @@ apis:
       - type: JSONSchema
         url: json-schema/compute-instance.json
 common:
+  - type: AgenticAccess
+    url: agentic-access/google-cloud-compute-engine-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/google-cloud-compute-engine-vulnerability-disclosure.yml
   - type: DomainSecurity
