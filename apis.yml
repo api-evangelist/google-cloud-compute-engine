@@ -4,7 +4,20 @@ description: >-
   Google Cloud Compute Engine delivers virtual machines running in Google's innovative data centers and worldwide fiber
   network. Compute Engine VMs boot quickly, come with persistent disk storage, and deliver consistent performance. It
   offers predefined and custom machine types, preemptible VMs, and sole-tenant nodes for specialized workloads.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-cloud-compute-engine.png
 url: https://raw.githubusercontent.com/api-search/google-cloud-compute-engine/refs/heads/main/apis.yml
 created: '2026-03-13'
 modified: '2026-05-19'
@@ -17,31 +30,81 @@ tags:
   - Infrastructure
   - Virtual Machines
 apis:
-  - name: Google Compute Engine API
-    description: >-
-      The Compute Engine API allows you to create and manage virtual machine instances, instance groups, disks,
-      networks, firewalls, and other compute resources programmatically within Google Cloud.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
-    baseURL: https://compute.googleapis.com
-    tags:
-      - Disks
-      - Firewalls
-      - Instances
-      - Networks
-      - Virtual Machines
-    properties:
-      - type: Documentation
-        url: https://cloud.google.com/compute/docs/reference/rest/v1
-      - type: OpenAPI
-        url: openapi/compute-openapi.yml
-      - type: Authentication
-        url: https://cloud.google.com/compute/docs/authentication
-      - type: GettingStarted
-        url: https://cloud.google.com/compute/docs/quickstart-linux
-      - type: JSONSchema
-        url: json-schema/compute-instance.json
+- aid: google-cloud-compute-engine:google-cloud-compute-engine-disks-api
+  name: Google Cloud Compute Engine Disks API
+  description: Manage persistent disks
+  humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
+  baseURL: https://compute.googleapis.com
+  tags:
+  - Disks
+  properties:
+  - type: OpenAPI
+    url: openapi/google-cloud-compute-engine-disks-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/compute/docs/reference/rest/v1
+  - type: Authentication
+    url: https://cloud.google.com/compute/docs/authentication
+  - type: GettingStarted
+    url: https://cloud.google.com/compute/docs/quickstart-linux
+  - type: JSONSchema
+    url: json-schema/compute-instance.json
+- aid: google-cloud-compute-engine:google-cloud-compute-engine-firewalls-api
+  name: Google Cloud Compute Engine Firewalls API
+  description: Manage firewall rules
+  humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
+  baseURL: https://compute.googleapis.com
+  tags:
+  - Firewalls
+  properties:
+  - type: OpenAPI
+    url: openapi/google-cloud-compute-engine-firewalls-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/compute/docs/reference/rest/v1
+  - type: Authentication
+    url: https://cloud.google.com/compute/docs/authentication
+  - type: GettingStarted
+    url: https://cloud.google.com/compute/docs/quickstart-linux
+  - type: JSONSchema
+    url: json-schema/compute-instance.json
+- aid: google-cloud-compute-engine:google-cloud-compute-engine-instances-api
+  name: Google Cloud Compute Engine Instances API
+  description: Manage virtual machine instances
+  humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
+  baseURL: https://compute.googleapis.com
+  tags:
+  - Instances
+  properties:
+  - type: OpenAPI
+    url: openapi/google-cloud-compute-engine-instances-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/compute/docs/reference/rest/v1
+  - type: Authentication
+    url: https://cloud.google.com/compute/docs/authentication
+  - type: GettingStarted
+    url: https://cloud.google.com/compute/docs/quickstart-linux
+  - type: JSONSchema
+    url: json-schema/compute-instance.json
+- aid: google-cloud-compute-engine:google-cloud-compute-engine-networks-api
+  name: Google Cloud Compute Engine Networks API
+  description: Manage VPC networks
+  humanURL: https://cloud.google.com/compute/docs/reference/rest/v1
+  baseURL: https://compute.googleapis.com
+  tags:
+  - Networks
+  properties:
+  - type: OpenAPI
+    url: openapi/google-cloud-compute-engine-networks-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/compute/docs/reference/rest/v1
+  - type: Authentication
+    url: https://cloud.google.com/compute/docs/authentication
+  - type: GettingStarted
+    url: https://cloud.google.com/compute/docs/quickstart-linux
+  - type: JSONSchema
+    url: json-schema/compute-instance.json
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/google-cloud-compute-engine/overview
   - type: AgenticAccess
     url: agentic-access/google-cloud-compute-engine-agentic-access.yml
   - type: VulnerabilityDisclosure
