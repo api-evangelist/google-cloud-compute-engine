@@ -1,0 +1,173 @@
+{
+  "info": {
+    "_postman_id": "0f67395c-863d-4e0b-adff-1351e8e948a1",
+    "name": "Google Cloud Compute Engine Google Compute Engine Disks Firewalls API",
+    "description": "Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.\n\nContact Support:\n Name: Google Cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:46:32.000Z",
+    "updatedAt": "2026-07-28T01:46:32.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-0f67395c-863d-4e0b-adff-1351e8e948a1"
+  },
+  "item": [
+    {
+      "name": "projects",
+      "item": [
+        {
+          "name": "{project}",
+          "item": [
+            {
+              "name": "global",
+              "item": [
+                {
+                  "name": "firewalls",
+                  "item": [
+                    {
+                      "name": "Google Cloud Compute Engine List Firewalls",
+                      "id": "987627d6-1729-418f-b843-e863d976b148",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/projects/:project/global/firewalls",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "projects",
+                            ":project",
+                            "global",
+                            "firewalls"
+                          ],
+                          "variable": [
+                            {
+                              "id": "21e8de5b-43fa-4fc0-9e18-4ca7bd371297",
+                              "key": "project",
+                              "value": "<string>",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "description": "Retrieves the list of firewall rules available to the specified project."
+                      },
+                      "response": [
+                        {
+                          "id": "84770367-d585-43d9-816c-e2f5fe38496b",
+                          "name": "Successful response",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              },
+                              {
+                                "description": "Added as a part of security scheme: oauth2",
+                                "key": "Authorization",
+                                "value": "<token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/projects/:project/global/firewalls",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "projects",
+                                ":project",
+                                "global",
+                                "firewalls"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "project"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n  \"items\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"network\": \"<string>\",\n      \"direction\": \"EGRESS\",\n      \"priority\": \"<integer>\",\n      \"allowed\": [\n        {\n          \"IPProtocol\": \"<string>\",\n          \"ports\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        },\n        {\n          \"IPProtocol\": \"<string>\",\n          \"ports\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        }\n      ],\n      \"sourceRanges\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"selfLink\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"network\": \"<string>\",\n      \"direction\": \"INGRESS\",\n      \"priority\": \"<integer>\",\n      \"allowed\": [\n        {\n          \"IPProtocol\": \"<string>\",\n          \"ports\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        },\n        {\n          \"IPProtocol\": \"<string>\",\n          \"ports\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        }\n      ],\n      \"sourceRanges\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"selfLink\": \"<string>\"\n    }\n  ],\n  \"nextPageToken\": \"<string>\"\n}",
+                          "createdAt": "2026-07-28T01:46:32.000Z",
+                          "updatedAt": "2026-07-28T01:46:32.000Z",
+                          "uid": "35240-84770367-d585-43d9-816c-e2f5fe38496b"
+                        }
+                      ],
+                      "createdAt": "2026-07-28T01:46:32.000Z",
+                      "updatedAt": "2026-07-28T01:46:32.000Z",
+                      "uid": "35240-987627d6-1729-418f-b843-e863d976b148"
+                    }
+                  ],
+                  "id": "647ad357-0396-40ef-8c27-5879beb15508",
+                  "createdAt": "2026-07-28T01:46:32.000Z",
+                  "updatedAt": "2026-07-28T01:46:32.000Z",
+                  "uid": "35240-647ad357-0396-40ef-8c27-5879beb15508"
+                }
+              ],
+              "id": "f944b3ea-6002-4f08-82c1-6605136f0374",
+              "createdAt": "2026-07-28T01:46:32.000Z",
+              "updatedAt": "2026-07-28T01:46:32.000Z",
+              "uid": "35240-f944b3ea-6002-4f08-82c1-6605136f0374"
+            }
+          ],
+          "id": "0c32edce-86c8-4d20-8152-6a8cfcff86df",
+          "createdAt": "2026-07-28T01:46:32.000Z",
+          "updatedAt": "2026-07-28T01:46:32.000Z",
+          "uid": "35240-0c32edce-86c8-4d20-8152-6a8cfcff86df"
+        }
+      ],
+      "id": "1dededf6-e322-44c8-9329-f4aecb668ad4",
+      "createdAt": "2026-07-28T01:46:32.000Z",
+      "updatedAt": "2026-07-28T01:46:32.000Z",
+      "uid": "35240-1dededf6-e322-44c8-9329-f4aecb668ad4"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://compute.googleapis.com/compute/v1"
+    }
+  ]
+}

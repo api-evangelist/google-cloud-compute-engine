@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "ec89ca87-7f69-4b17-97de-a8494ca108d0",
+    "name": "Google Cloud Compute Engine Google Compute Engine Disks API",
+    "description": "Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.\n\nContact Support:\n Name: Google Cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:46:31.000Z",
+    "updatedAt": "2026-07-28T01:46:31.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-ec89ca87-7f69-4b17-97de-a8494ca108d0"
+  },
+  "item": [
+    {
+      "name": "projects",
+      "item": [
+        {
+          "name": "{project}",
+          "item": [
+            {
+              "name": "zones",
+              "item": [
+                {
+                  "name": "{zone}",
+                  "item": [
+                    {
+                      "name": "disks",
+                      "item": [
+                        {
+                          "name": "Google Cloud Compute Engine List Disks",
+                          "id": "0e7760ca-da3c-4785-b396-5f15862244db",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/projects/:project/zones/:zone/disks",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "projects",
+                                ":project",
+                                "zones",
+                                ":zone",
+                                "disks"
+                              ],
+                              "variable": [
+                                {
+                                  "id": "3b3bce62-8bd2-46fe-bd96-29a15a38c285",
+                                  "key": "project",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                },
+                                {
+                                  "id": "0a4beeef-c58a-4f5b-bc22-08834531ba27",
+                                  "key": "zone",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "description": "Retrieves a list of persistent disks contained within the specified zone."
+                          },
+                          "response": [
+                            {
+                              "id": "2eaee7ce-8a21-4b0b-9f11-61dfdbaf8892",
+                              "name": "Successful response",
+                              "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  },
+                                  {
+                                    "description": "Added as a part of security scheme: oauth2",
+                                    "key": "Authorization",
+                                    "value": "<token>"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/projects/:project/zones/:zone/disks",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "projects",
+                                    ":project",
+                                    "zones",
+                                    ":zone",
+                                    "disks"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "project"
+                                    },
+                                    {
+                                      "key": "zone"
+                                    }
+                                  ]
+                                }
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "_postman_previewlanguage": "json",
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "cookie": [],
+                              "responseTime": null,
+                              "body": "{\n  \"items\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"sizeGb\": \"<string>\",\n      \"type\": \"<string>\",\n      \"status\": \"<string>\",\n      \"zone\": \"<string>\",\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"sizeGb\": \"<string>\",\n      \"type\": \"<string>\",\n      \"status\": \"<string>\",\n      \"zone\": \"<string>\",\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    }\n  ],\n  \"nextPageToken\": \"<string>\"\n}",
+                              "createdAt": "2026-07-28T01:46:31.000Z",
+                              "updatedAt": "2026-07-28T01:46:31.000Z",
+                              "uid": "35240-2eaee7ce-8a21-4b0b-9f11-61dfdbaf8892"
+                            }
+                          ],
+                          "createdAt": "2026-07-28T01:46:31.000Z",
+                          "updatedAt": "2026-07-28T01:46:31.000Z",
+                          "uid": "35240-0e7760ca-da3c-4785-b396-5f15862244db"
+                        }
+                      ],
+                      "id": "629dde47-c465-410e-9880-f66211d006da",
+                      "createdAt": "2026-07-28T01:46:31.000Z",
+                      "updatedAt": "2026-07-28T01:46:31.000Z",
+                      "uid": "35240-629dde47-c465-410e-9880-f66211d006da"
+                    }
+                  ],
+                  "id": "270e1d33-ff90-44f2-9729-98aacb487bb4",
+                  "createdAt": "2026-07-28T01:46:31.000Z",
+                  "updatedAt": "2026-07-28T01:46:31.000Z",
+                  "uid": "35240-270e1d33-ff90-44f2-9729-98aacb487bb4"
+                }
+              ],
+              "id": "68c61387-f9c2-4e32-8521-afcb223dc61a",
+              "createdAt": "2026-07-28T01:46:31.000Z",
+              "updatedAt": "2026-07-28T01:46:31.000Z",
+              "uid": "35240-68c61387-f9c2-4e32-8521-afcb223dc61a"
+            }
+          ],
+          "id": "a65c5411-aedf-47ef-b693-515b61a46d22",
+          "createdAt": "2026-07-28T01:46:31.000Z",
+          "updatedAt": "2026-07-28T01:46:31.000Z",
+          "uid": "35240-a65c5411-aedf-47ef-b693-515b61a46d22"
+        }
+      ],
+      "id": "df84851a-0331-4cd3-bba8-8a67332ae821",
+      "createdAt": "2026-07-28T01:46:31.000Z",
+      "updatedAt": "2026-07-28T01:46:31.000Z",
+      "uid": "35240-df84851a-0331-4cd3-bba8-8a67332ae821"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://compute.googleapis.com/compute/v1"
+    }
+  ]
+}

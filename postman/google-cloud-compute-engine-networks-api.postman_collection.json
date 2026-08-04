@@ -1,0 +1,173 @@
+{
+  "info": {
+    "_postman_id": "5991b817-587a-489e-870c-a4b63c956409",
+    "name": "Google Cloud Compute Engine Google Compute Engine Disks Networks API",
+    "description": "Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.\n\nContact Support:\n Name: Google Cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:46:35.000Z",
+    "updatedAt": "2026-07-28T01:46:35.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-5991b817-587a-489e-870c-a4b63c956409"
+  },
+  "item": [
+    {
+      "name": "projects",
+      "item": [
+        {
+          "name": "{project}",
+          "item": [
+            {
+              "name": "global",
+              "item": [
+                {
+                  "name": "networks",
+                  "item": [
+                    {
+                      "name": "Google Cloud Compute Engine List Networks",
+                      "id": "f974496d-68c4-4622-8817-995c83d86f7e",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/projects/:project/global/networks",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "projects",
+                            ":project",
+                            "global",
+                            "networks"
+                          ],
+                          "variable": [
+                            {
+                              "id": "cb613588-64cc-45f6-b7ed-45935db49d36",
+                              "key": "project",
+                              "value": "<string>",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "description": "Retrieves the list of networks available to the specified project."
+                      },
+                      "response": [
+                        {
+                          "id": "8e53e883-5632-46af-bc96-dc157eef099f",
+                          "name": "Successful response",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              },
+                              {
+                                "description": "Added as a part of security scheme: oauth2",
+                                "key": "Authorization",
+                                "value": "<token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/projects/:project/global/networks",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "projects",
+                                ":project",
+                                "global",
+                                "networks"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "project"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n  \"items\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"autoCreateSubnetworks\": \"<boolean>\",\n      \"IPv4Range\": \"<string>\",\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"autoCreateSubnetworks\": \"<boolean>\",\n      \"IPv4Range\": \"<string>\",\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    }\n  ],\n  \"nextPageToken\": \"<string>\"\n}",
+                          "createdAt": "2026-07-28T01:46:35.000Z",
+                          "updatedAt": "2026-07-28T01:46:35.000Z",
+                          "uid": "35240-8e53e883-5632-46af-bc96-dc157eef099f"
+                        }
+                      ],
+                      "createdAt": "2026-07-28T01:46:35.000Z",
+                      "updatedAt": "2026-07-28T01:46:35.000Z",
+                      "uid": "35240-f974496d-68c4-4622-8817-995c83d86f7e"
+                    }
+                  ],
+                  "id": "3559b0fc-1d99-4b2e-ad69-695f0bc0dbde",
+                  "createdAt": "2026-07-28T01:46:35.000Z",
+                  "updatedAt": "2026-07-28T01:46:35.000Z",
+                  "uid": "35240-3559b0fc-1d99-4b2e-ad69-695f0bc0dbde"
+                }
+              ],
+              "id": "ea4f3f2d-c57f-4473-8b95-6f8d9c93c169",
+              "createdAt": "2026-07-28T01:46:35.000Z",
+              "updatedAt": "2026-07-28T01:46:35.000Z",
+              "uid": "35240-ea4f3f2d-c57f-4473-8b95-6f8d9c93c169"
+            }
+          ],
+          "id": "6c022579-737b-4d78-9dff-edc04f658fa7",
+          "createdAt": "2026-07-28T01:46:35.000Z",
+          "updatedAt": "2026-07-28T01:46:35.000Z",
+          "uid": "35240-6c022579-737b-4d78-9dff-edc04f658fa7"
+        }
+      ],
+      "id": "00e33154-7513-4096-813c-920f5d7f6f85",
+      "createdAt": "2026-07-28T01:46:35.000Z",
+      "updatedAt": "2026-07-28T01:46:35.000Z",
+      "uid": "35240-00e33154-7513-4096-813c-920f5d7f6f85"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://compute.googleapis.com/compute/v1"
+    }
+  ]
+}

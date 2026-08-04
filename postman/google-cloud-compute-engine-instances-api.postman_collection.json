@@ -1,0 +1,581 @@
+{
+  "info": {
+    "_postman_id": "89c5fb3c-f389-4b26-87ad-7583342e57eb",
+    "name": "Google Cloud Compute Engine Google Compute Engine Disks Instances API",
+    "description": "Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.\n\nContact Support:\n Name: Google Cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:46:33.000Z",
+    "updatedAt": "2026-07-28T01:46:33.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-89c5fb3c-f389-4b26-87ad-7583342e57eb"
+  },
+  "item": [
+    {
+      "name": "projects",
+      "item": [
+        {
+          "name": "{project}",
+          "item": [
+            {
+              "name": "zones",
+              "item": [
+                {
+                  "name": "{zone}",
+                  "item": [
+                    {
+                      "name": "instances",
+                      "item": [
+                        {
+                          "name": "{instance}",
+                          "item": [
+                            {
+                              "name": "Google Cloud Compute Engine Get Instance",
+                              "id": "dbd456e5-273d-4c07-90b0-a0603126b1c6",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "method": "GET",
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances/:instance",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "projects",
+                                    ":project",
+                                    "zones",
+                                    ":zone",
+                                    "instances",
+                                    ":instance"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "b8eb722c-b763-463a-b96a-55fc1a6ea033",
+                                      "key": "project",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    },
+                                    {
+                                      "id": "0dc9d280-3ed0-48da-a745-9f7fc52dc39f",
+                                      "key": "zone",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    },
+                                    {
+                                      "id": "23389bc5-292f-4f43-9e9d-487989841f5e",
+                                      "key": "instance",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "description": "Returns the specified Instance resource."
+                              },
+                              "response": [
+                                {
+                                  "id": "a0c178d7-87ef-45e5-89a4-6236a9bcb35c",
+                                  "name": "Successful response",
+                                  "originalRequest": {
+                                    "method": "GET",
+                                    "header": [
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      },
+                                      {
+                                        "description": "Added as a part of security scheme: oauth2",
+                                        "key": "Authorization",
+                                        "value": "<token>"
+                                      }
+                                    ],
+                                    "url": {
+                                      "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances/:instance",
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "path": [
+                                        "projects",
+                                        ":project",
+                                        "zones",
+                                        ":zone",
+                                        "instances",
+                                        ":instance"
+                                      ],
+                                      "variable": [
+                                        {
+                                          "key": "project"
+                                        },
+                                        {
+                                          "key": "zone"
+                                        },
+                                        {
+                                          "key": "instance"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "_postman_previewlanguage": "json",
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "cookie": [],
+                                  "responseTime": null,
+                                  "body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"zone\": \"<string>\",\n  \"machineType\": \"<string>\",\n  \"status\": \"STAGING\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    },\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    },\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    }\n  ],\n  \"selfLink\": \"<string>\",\n  \"creationTimestamp\": \"<dateTime>\"\n}",
+                                  "createdAt": "2026-07-28T01:46:33.000Z",
+                                  "updatedAt": "2026-07-28T01:46:33.000Z",
+                                  "uid": "35240-a0c178d7-87ef-45e5-89a4-6236a9bcb35c"
+                                }
+                              ],
+                              "createdAt": "2026-07-28T01:46:33.000Z",
+                              "updatedAt": "2026-07-28T01:46:33.000Z",
+                              "uid": "35240-dbd456e5-273d-4c07-90b0-a0603126b1c6"
+                            },
+                            {
+                              "name": "Google Cloud Compute Engine Delete Instance",
+                              "id": "f8f3196f-de15-4089-b2c4-1ff8768e5d01",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "method": "DELETE",
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances/:instance",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "projects",
+                                    ":project",
+                                    "zones",
+                                    ":zone",
+                                    "instances",
+                                    ":instance"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "cb20723d-5ebf-4a99-898b-985ca1fc34d0",
+                                      "key": "project",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    },
+                                    {
+                                      "id": "e736b56a-266e-405c-8d32-2617f65ead16",
+                                      "key": "zone",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    },
+                                    {
+                                      "id": "e64bc4e6-e08a-4eeb-afda-dbb01b30db1e",
+                                      "key": "instance",
+                                      "value": "<string>",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "description": "Deletes the specified Instance resource."
+                              },
+                              "response": [
+                                {
+                                  "id": "b366e1ab-d61e-4262-a15e-7cc69c174523",
+                                  "name": "Successful response",
+                                  "originalRequest": {
+                                    "method": "DELETE",
+                                    "header": [
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      },
+                                      {
+                                        "description": "Added as a part of security scheme: oauth2",
+                                        "key": "Authorization",
+                                        "value": "<token>"
+                                      }
+                                    ],
+                                    "url": {
+                                      "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances/:instance",
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "path": [
+                                        "projects",
+                                        ":project",
+                                        "zones",
+                                        ":zone",
+                                        "instances",
+                                        ":instance"
+                                      ],
+                                      "variable": [
+                                        {
+                                          "key": "project"
+                                        },
+                                        {
+                                          "key": "zone"
+                                        },
+                                        {
+                                          "key": "instance"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "_postman_previewlanguage": "json",
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "cookie": [],
+                                  "responseTime": null,
+                                  "body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"operationType\": \"<string>\",\n  \"status\": \"<string>\",\n  \"targetLink\": \"<string>\",\n  \"progress\": \"<integer>\",\n  \"insertTime\": \"<dateTime>\"\n}",
+                                  "createdAt": "2026-07-28T01:46:33.000Z",
+                                  "updatedAt": "2026-07-28T01:46:33.000Z",
+                                  "uid": "35240-b366e1ab-d61e-4262-a15e-7cc69c174523"
+                                }
+                              ],
+                              "createdAt": "2026-07-28T01:46:33.000Z",
+                              "updatedAt": "2026-07-28T01:46:33.000Z",
+                              "uid": "35240-f8f3196f-de15-4089-b2c4-1ff8768e5d01"
+                            }
+                          ],
+                          "id": "cf3f8a15-0df5-44c6-8d90-3144e6c43072",
+                          "createdAt": "2026-07-28T01:46:33.000Z",
+                          "updatedAt": "2026-07-28T01:46:33.000Z",
+                          "uid": "35240-cf3f8a15-0df5-44c6-8d90-3144e6c43072"
+                        },
+                        {
+                          "name": "Google Cloud Compute Engine List Instances",
+                          "id": "c3f79a77-2cc3-469b-9531-9e4a421eba7e",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances?maxResults=<integer>&pageToken=<string>",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "projects",
+                                ":project",
+                                "zones",
+                                ":zone",
+                                "instances"
+                              ],
+                              "query": [
+                                {
+                                  "key": "maxResults",
+                                  "value": "<integer>"
+                                },
+                                {
+                                  "key": "pageToken",
+                                  "value": "<string>"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "id": "9d906095-b933-4199-9b0a-9810472a6192",
+                                  "key": "project",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                },
+                                {
+                                  "id": "3b89e607-db94-4e2e-b277-23eb30db1b59",
+                                  "key": "zone",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "description": "Retrieves the list of instances contained within the specified zone."
+                          },
+                          "response": [
+                            {
+                              "id": "8f8ab364-f85f-4637-a370-fb9656863f8b",
+                              "name": "Successful response",
+                              "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  },
+                                  {
+                                    "description": "Added as a part of security scheme: oauth2",
+                                    "key": "Authorization",
+                                    "value": "<token>"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances?maxResults=<integer>&pageToken=<string>",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "projects",
+                                    ":project",
+                                    "zones",
+                                    ":zone",
+                                    "instances"
+                                  ],
+                                  "query": [
+                                    {
+                                      "key": "maxResults",
+                                      "value": "<integer>"
+                                    },
+                                    {
+                                      "key": "pageToken",
+                                      "value": "<string>"
+                                    }
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "project"
+                                    },
+                                    {
+                                      "key": "zone"
+                                    }
+                                  ]
+                                }
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "_postman_previewlanguage": "json",
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "cookie": [],
+                              "responseTime": null,
+                              "body": "{\n  \"items\": [\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"zone\": \"<string>\",\n      \"machineType\": \"<string>\",\n      \"status\": \"STAGING\",\n      \"networkInterfaces\": [\n        {\n          \"network\": \"<string>\",\n          \"subnetwork\": \"<string>\",\n          \"networkIP\": \"<string>\"\n        },\n        {\n          \"network\": \"<string>\",\n          \"subnetwork\": \"<string>\",\n          \"networkIP\": \"<string>\"\n        }\n      ],\n      \"disks\": [\n        {\n          \"source\": \"<string>\",\n          \"boot\": \"<boolean>\",\n          \"autoDelete\": \"<boolean>\"\n        },\n        {\n          \"source\": \"<string>\",\n          \"boot\": \"<boolean>\",\n          \"autoDelete\": \"<boolean>\"\n        }\n      ],\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"zone\": \"<string>\",\n      \"machineType\": \"<string>\",\n      \"status\": \"RUNNING\",\n      \"networkInterfaces\": [\n        {\n          \"network\": \"<string>\",\n          \"subnetwork\": \"<string>\",\n          \"networkIP\": \"<string>\"\n        },\n        {\n          \"network\": \"<string>\",\n          \"subnetwork\": \"<string>\",\n          \"networkIP\": \"<string>\"\n        }\n      ],\n      \"disks\": [\n        {\n          \"source\": \"<string>\",\n          \"boot\": \"<boolean>\",\n          \"autoDelete\": \"<boolean>\"\n        },\n        {\n          \"source\": \"<string>\",\n          \"boot\": \"<boolean>\",\n          \"autoDelete\": \"<boolean>\"\n        }\n      ],\n      \"selfLink\": \"<string>\",\n      \"creationTimestamp\": \"<dateTime>\"\n    }\n  ],\n  \"nextPageToken\": \"<string>\"\n}",
+                              "createdAt": "2026-07-28T01:46:33.000Z",
+                              "updatedAt": "2026-07-28T01:46:33.000Z",
+                              "uid": "35240-8f8ab364-f85f-4637-a370-fb9656863f8b"
+                            }
+                          ],
+                          "createdAt": "2026-07-28T01:46:33.000Z",
+                          "updatedAt": "2026-07-28T01:46:33.000Z",
+                          "uid": "35240-c3f79a77-2cc3-469b-9531-9e4a421eba7e"
+                        },
+                        {
+                          "name": "Google Cloud Compute Engine Create Instance",
+                          "id": "4033af25-d55a-4910-a3db-f5b379278e3e",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "method": "POST",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"zone\": \"<string>\",\n  \"machineType\": \"<string>\",\n  \"status\": \"STAGING\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    },\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    },\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    }\n  ],\n  \"selfLink\": \"<string>\",\n  \"creationTimestamp\": \"<dateTime>\"\n}",
+                              "options": {
+                                "raw": {
+                                  "headerFamily": "json",
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "projects",
+                                ":project",
+                                "zones",
+                                ":zone",
+                                "instances"
+                              ],
+                              "variable": [
+                                {
+                                  "id": "27086dfa-8af6-4894-b62a-4a3f7f46ebd4",
+                                  "key": "project",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                },
+                                {
+                                  "id": "192cb000-c131-4a7c-8020-1910ca2e9a7c",
+                                  "key": "zone",
+                                  "value": "<string>",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "description": "Creates an instance resource in the specified project using the data included in the request."
+                          },
+                          "response": [
+                            {
+                              "id": "74ccfa5c-3d66-4a4d-9987-193636499d00",
+                              "name": "Successful response",
+                              "originalRequest": {
+                                "method": "POST",
+                                "header": [
+                                  {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                  },
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  },
+                                  {
+                                    "description": "Added as a part of security scheme: oauth2",
+                                    "key": "Authorization",
+                                    "value": "<token>"
+                                  }
+                                ],
+                                "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"zone\": \"<string>\",\n  \"machineType\": \"<string>\",\n  \"status\": \"STAGING\",\n  \"networkInterfaces\": [\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    },\n    {\n      \"network\": \"<string>\",\n      \"subnetwork\": \"<string>\",\n      \"networkIP\": \"<string>\"\n    }\n  ],\n  \"disks\": [\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    },\n    {\n      \"source\": \"<string>\",\n      \"boot\": \"<boolean>\",\n      \"autoDelete\": \"<boolean>\"\n    }\n  ],\n  \"selfLink\": \"<string>\",\n  \"creationTimestamp\": \"<dateTime>\"\n}",
+                                  "options": {
+                                    "raw": {
+                                      "headerFamily": "json",
+                                      "language": "json"
+                                    }
+                                  }
+                                },
+                                "url": {
+                                  "raw": "{{baseUrl}}/projects/:project/zones/:zone/instances",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "projects",
+                                    ":project",
+                                    "zones",
+                                    ":zone",
+                                    "instances"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "project"
+                                    },
+                                    {
+                                      "key": "zone"
+                                    }
+                                  ]
+                                }
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "_postman_previewlanguage": "json",
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "cookie": [],
+                              "responseTime": null,
+                              "body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"operationType\": \"<string>\",\n  \"status\": \"<string>\",\n  \"targetLink\": \"<string>\",\n  \"progress\": \"<integer>\",\n  \"insertTime\": \"<dateTime>\"\n}",
+                              "createdAt": "2026-07-28T01:46:33.000Z",
+                              "updatedAt": "2026-07-28T01:46:33.000Z",
+                              "uid": "35240-74ccfa5c-3d66-4a4d-9987-193636499d00"
+                            }
+                          ],
+                          "createdAt": "2026-07-28T01:46:33.000Z",
+                          "updatedAt": "2026-07-28T01:46:33.000Z",
+                          "uid": "35240-4033af25-d55a-4910-a3db-f5b379278e3e"
+                        }
+                      ],
+                      "id": "bba97c0e-4043-4279-972e-5d5fb90f5492",
+                      "createdAt": "2026-07-28T01:46:33.000Z",
+                      "updatedAt": "2026-07-28T01:46:33.000Z",
+                      "uid": "35240-bba97c0e-4043-4279-972e-5d5fb90f5492"
+                    }
+                  ],
+                  "id": "1aafc2ed-e55d-4116-aa41-8047096e7f4e",
+                  "createdAt": "2026-07-28T01:46:33.000Z",
+                  "updatedAt": "2026-07-28T01:46:33.000Z",
+                  "uid": "35240-1aafc2ed-e55d-4116-aa41-8047096e7f4e"
+                }
+              ],
+              "id": "716a7e9c-34e6-4814-a74c-2e8fa9064bf0",
+              "createdAt": "2026-07-28T01:46:33.000Z",
+              "updatedAt": "2026-07-28T01:46:33.000Z",
+              "uid": "35240-716a7e9c-34e6-4814-a74c-2e8fa9064bf0"
+            }
+          ],
+          "id": "ff2698f3-bb22-4b29-96e5-edc5ef0b0333",
+          "createdAt": "2026-07-28T01:46:33.000Z",
+          "updatedAt": "2026-07-28T01:46:33.000Z",
+          "uid": "35240-ff2698f3-bb22-4b29-96e5-edc5ef0b0333"
+        }
+      ],
+      "id": "359fb2d8-2229-42d3-9124-c438bc0950f8",
+      "createdAt": "2026-07-28T01:46:33.000Z",
+      "updatedAt": "2026-07-28T01:46:33.000Z",
+      "uid": "35240-359fb2d8-2229-42d3-9124-c438bc0950f8"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/cloud-platform",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://compute.googleapis.com/compute/v1"
+    }
+  ]
+}

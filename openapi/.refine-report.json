@@ -1,0 +1,20 @@
+{
+  "provider": "google-cloud-compute-engine",
+  "sources": [
+    "google-cloud-compute-engine-disks-api-openapi.yml",
+    "google-cloud-compute-engine-firewalls-api-openapi.yml",
+    "google-cloud-compute-engine-instances-api-openapi.yml",
+    "google-cloud-compute-engine-networks-api-openapi.yml"
+  ],
+  "outputs": [
+    "google-cloud-compute-engine-disks-api-openapi.yml",
+    "google-cloud-compute-engine-firewalls-api-openapi.yml",
+    "google-cloud-compute-engine-instances-api-openapi.yml",
+    "google-cloud-compute-engine-networks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
