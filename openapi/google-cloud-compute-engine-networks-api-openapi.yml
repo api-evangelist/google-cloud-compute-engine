@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Google Cloud Compute Engine Google Compute Engine Disks Networks API
+  title: Google Cloud Compute Engine Google Compute Engine Networks…
   description: Creates and runs virtual machines on Google Cloud infrastructure, with support for managing disks, networks, and firewall rules.
   version: 1.0.0
   contact:
