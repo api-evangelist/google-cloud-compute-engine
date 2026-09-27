@@ -149,24 +149,6 @@ paths:
                 $ref: '#/components/schemas/Operation'
 components:
   schemas:
-    Operation:
-      type: object
-      properties:
-        id:
-          type: string
-        name:
-          type: string
-        operationType:
-          type: string
-        status:
-          type: string
-        targetLink:
-          type: string
-        progress:
-          type: integer
-        insertTime:
-          type: string
-          format: date-time
     Instance:
       type: object
       properties:
@@ -216,6 +198,24 @@ components:
         selfLink:
           type: string
         creationTimestamp:
+          type: string
+          format: date-time
+    Operation:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        operationType:
+          type: string
+        status:
+          type: string
+        targetLink:
+          type: string
+        progress:
+          type: integer
+        insertTime:
           type: string
           format: date-time
   securitySchemes:
