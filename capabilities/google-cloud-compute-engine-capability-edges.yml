@@ -1,0 +1,41 @@
+slug: google-cloud-compute-engine
+provider: Google Cloud Compute Engine
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Instances
+  spec_file: google-cloud-compute-engine-instances-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.9
+  evidence: '"Create Instance" / "Delete Instance" — "Creates and runs virtual machines on Google Cloud
+    infrastructure"'
+  reason: Lifecycle management of virtual machines is compute infrastructure management; no other reading
+    fits.
+- tag: Disks
+  spec_file: google-cloud-compute-engine-disks-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.82
+  evidence: '"List Disks" with schema Disk — "persistent disk storage" on "Google Cloud infrastructure"'
+  reason: Managing cloud persistent storage resources is squarely compute/storage infrastructure management.
+- tag: Networks
+  spec_file: google-cloud-compute-engine-networks-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.82
+  evidence: '"List Networks", schema Network — "managing disks, networks, and firewall rules"'
+  reason: Cloud VPC network resources are part of compute/storage/network infrastructure management.
